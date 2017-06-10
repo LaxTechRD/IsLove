@@ -1,0 +1,127 @@
+.chat {
+	border-radius: 10px;
+	width: 100%;
+	height: 512px;
+	background-color: #ECECEC;	
+	overflow-y: auto;
+}
+
+.messages {
+	border-radius: 10px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: white;
+}
+
+.msg {
+	margin-top: 25px;
+	padding: 0px;
+}
+
+.online {
+	border-radius: 10px;
+	width: 100%;
+	height: 610px;
+	background-color: #ECECEC;
+}
+
+.title {
+	font-size: 35px;
+	margin-left: 10px;
+}
+
+.text {
+	border-radius: 10px;
+	width: 100%;
+	height: 68px;
+	background-color: #ECECEC;
+	margin-top: 10px;
+}
+
+.girl {
+	font-size: 50px;
+	font-family: cursive;
+	color: darkblue;
+}
+
+.girl-navbar {						
+	color: darkblue;                 /* girl-navbar, logo diseñado para la navbar */
+	font-family: cursive;
+}
+
+.boy {
+	font-size: 50px;
+	font-family: cursive;
+	color: darkred;
+}
+
+.boy-navbar {
+	color: darkred;					/* boy-navbar, logo diseñado para la navbar */
+	font-family: cursive;
+}
+
+.text {
+	background-color: #ECECEC;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	resize: none;
+	padding: 15px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 40px;
+}
+
+.chat_post {
+	padding: 0px 20px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+.user {
+	font-weight: bold;
+}
+
+.online-scroll {
+	border-radius: 10px;
+	width: 100%;
+	background-color: #ECECEC;
+	overflow-y: auto;
+}
+
+.online-scroll-user {
+	padding: 0px 30px;
+}
+
+/* Estilos del Footer */
+
+footer {
+	align-self: flex-end;
+	bottom: 0;
+	color: white;
+	padding-bottom: 10px;
+	background-color: #303030;
+}
+
+.copyright {
+	margin-top: 17px;
+}
+
+.lista_copyright {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	list-style: none;
+}
+
+.li_copyright {
+	padding-right: 30px;
+	display: inline-block;
+}
+
+.author {
+	color: gray;
+	margin-top: 17px;
+	margin-right: 1em;
+	float: right;
+	font-style: italic;
+}

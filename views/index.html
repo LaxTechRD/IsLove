@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>IsLove</title>
+	<link rel="shortcut icon" href="/files/res/icon.png" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/files/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/files/fonts/awesome/css/font-awesome.min.css">
+</head>
+
+<body>	
+
+<!-- Jumbotron -->
+
+<div class="jumbotron web_design">
+	<h1>Welcome to <b class="girl">Is</b>♥<b class="boy">Love</b> Community!</h1>
+	<p>
+		IsLove es una plataforma para conocer nuevas, y quién sabe, hasta tu media naranja! Está basado en un Proyecto Escolar Emprendedor con fines de Hobby y entreteniento. Actualmente estamos trabajando en el desarrollo de la Plataforma, pero sino quieres esperar más, Comparte esta Plataforma en tus redes sociales e Islove crezca con tu ayuda. ¡Diviérte!
+	</p><br><br>
+
+	<!-- Jumbotron sobre diseño web -->
+
+	<h2 class="platform">Cómo está dividida el Desarrollo de una Plataforma?</h2><br>
+	<section class="row">
+		<div class="col-xm-12 col-sm-6 col-md-3 column4">
+			<img src="/files/res/frontend.jpg" alt="Anonymous" class="img-responsive">
+		</div>
+		<div class="col-xm-12 col-sm-6 col-md-3 column3">
+			<h3>Front-End</h3>
+			<p>
+				En diseño de software el front-end es la parte del software que interactúa con el o los usuarios y el back-end es la parte que procesa la entrada desde el front-end.
+			</p>
+		</div>
+		<div class="col-xm-12 col-sm-6 col-md-3 column4">
+			<img src="/files/res/backend.png" alt="Anonymous" class="img-responsive">
+		</div>
+		<div class="col-xm-12 col-sm-6 col-md-3 column3">
+			<h3>Back-End</h3>
+			<p>
+				Backend, Frontend, Diseño, UX, usabilidad, posicionamiento, estrategia, arquitectura y muchos otros términos componen el diseño y desarrollo web moderno.
+			</p>
+		</div>
+	</section>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+
+	<!-- Formulario -->
+	<div class="row">
+		<div class="col-md-4"> <!-- Sólo es para centrar el Formulario :/ --> </div>
+		<div class="col-md-4">
+			<div class="login">
+				<form action="/login" method="post" class="form-group">
+					<h1 class="title"><b class="girl">Is</b>♥<b class="boy">Love</b></h1><br><br>
+					<%if(msg.toString().length !=0) {%>
+					<div class="alert alert-danger" id="alerta">
+					  <strong><%=msg%></strong>
+					</div>
+					 <%}%>
+					<span 
+					<span class="sr-only">User: </span>
+					<input type="text" class="form-control form-input" placeholder="Usuario"  name='username'required><br>
+
+					<span class="sr-only">Password: </span>
+					<input type="password" class="form-control form-input" placeholder="Contraseña" name="password" required><br>
+
+				
+	  				<br>
+					<button type="submit" class="btn btn-primary button">Iniciar Sesión</button><br><br>
+				
+				<a class="btn btn-block btn-social btn-facebook" name='facebook'style="background: #3B5998; color: #fff;" href="/auth/facebook/callback">
+    			<span class="fa fa-facebook"></span> Sign in with Facebook
+ 				</a>
+ 				</form>
+				<a href="#" class="disabled">Tienes problemas al iniciar sesión?</a><br><br>
+
+				<a href="/signup" class="btn btn-success button">Registrarse</a>
+		
+				
+			</div>
+		</div>
+	</div>
+<div class="clearfix"></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-md-12 footer">
+				<ul class="lista_copyright">
+
+					<li class="li">
+						<h5 class="copyright">IsLove © 2017</h5>
+					</li>
+
+					<li class="li">
+						<h6 class="copyright">Todos los derechos reservados.</h6>
+					</li>
+					
+					<p class="author">created by <a href="https://github.com/server1567" class="enlace">Server1567</a> and <a href="https://github.com/xManokerox" class="enlace">xManokerox</a></p>	
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+<!-- JavaScript -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

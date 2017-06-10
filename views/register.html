@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>IsLove - Registrarse</title>
+	<link rel="shortcut icon" href="/files/res/icon.png" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/files/css/styles.css">
+</head>
+
+<body>	
+
+<!-- Jumbotron -->
+
+<div class="jumbotron">
+	<h1>Welcome to <b class="girl">Is</b>♥<b class="boy">Love</b> Community!</h1>
+	<p>
+		IsLove es una plataforma para conocer nuevas, y quién sabe, hasta tu media naranja! Está basado en un Proyecto Escolar Emprendedor con fines de Hobby y entreteniento. Actualmente estamos trabajando en el desarrollo de la Plataforma, pero sino quieres esperar más, Comparte esta Plataforma en tus redes sociales e Islove crezca con tu ayuda. ¡Diviérte!
+	</p>
+</div>
+
+<br><br>
+
+<!-- Formulario de Registro -->
+
+<div class="container">
+	<br>
+	<div class="row">
+		<div class="col-md-4"></div> <!-- Sólo es para centrar el Formulario -->
+		<div class="col-md-4">
+			<form action="/signup" class="form-group" name="form" role="register" method="post">
+				<h1 class="title"><b class="girl">Is</b>♥<b class="boy">Love</b></h1><br><br>
+				<div id="msg_user"></div>
+				
+				<!--<span class="sr-only">Name: </span><label for="label">Nombre: </label>
+				<input type="text" class="form-control form-input-reg" placeholder="John" required name="first_name" />
+
+				<span class="sr-only">Last Name: </span><label for="label">Apellido: </label>
+				<input type="text" class="form-control form-input-reg" placeholder="Doe" required name="last_name" />-->
+				<%if(msg.toString().length !=0) {%>
+				<div class="alert alert-danger" id="alerta">
+				  <strong><%=msg%></strong>
+				</div>
+				 <%}%>
+				<%if(err.toString().length !=0) {%>
+				<div class="alert alert-danger" id="alerta">
+				  <strong><%=err%></strong>
+				</div>
+				 <%}%>
+				<span class="sr-only">Username: </span><label for="label">Usuario: </label>
+				<input type="user" class="form-control form-input-reg" placeholder="server1567" required name="user_name" id='username'onblur="verficar_user()" />
+
+				<span class="sr-only">Email: </span><label for="label">Correo Electrónico: </label>
+				<input type="email" class="form-control form-input-reg" onblur="verficar_user()" id="email" placeholder="user@company.com" required name="email" />
+
+				<span class="sr-only">Password: </span><label for="label">Contraseña: </label>
+				<input type="password" class="form-control form-input-reg" placeholder="8 characters" required name="password"/>
+
+				<span class="sr-only">Re_Password</span><label for="label">Repetir Contraseña: </label>
+				<input type="password" class="form-control form-input-reg" placeholder="8 characters" required name="confirm_password"/>
+<!--				
+				<label for="label">Cuál es tu género?</label>
+
+		 Selector de Géneros 
+
+				<ul class="list-inline">
+					<li>
+						<div class="radio">
+							<label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" required>
+							    Hombre
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio">
+							<label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" required>
+							    Mujer
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio">
+							<label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" required>
+							    Otros
+							</label>
+						</div>
+					</li>
+				</ul>
+-->
+				<center>
+					<button type="submit" class="btn btn-success button_register">Registrarse</button><br><br>
+					<span>Ya tienes una cuenta? <a href="/">Inicia sesión</a>.</span>
+				</center>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Formulario de Registro -->
+
+<!-- Footer -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-md-12 footer">
+				<ul class="lista_copyright">
+
+					<li class="li">
+						<h5 class="copyright">IsLove © 2017</h5>
+					</li>
+
+					<li class="li">
+						<h6 class="copyright">Todos los derechos reservados.</h6>
+					</li>
+					
+					<p class="author">created by <a href="https://github.com/Server1567" class="enlace">Server1567</a> and <a href="https://github.com/xManokerox" class="enlace">xManokerox</a></p>	
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+<!-- JavaScript -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src='/files/js/main.js'></script>
+</body>
+
+</html>

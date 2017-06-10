@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>IsLove - Chatting</title>
+	<link rel="shortcut icon" href="/files/res/icon.png" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/files/css/chatting.css">
+	<link rel="stylesheet" type="text/css" href="/files/fonts/awesome/css/font-awesome.min.css">
+	<style>
+		ul,ol{
+			list-style-type: none;
+		}
+	</style>
+</head>
+<body style="margin-top: 3%; background-color: #D6D6D6;">
+	
+<div class="container-fluid">
+	<br>
+	<div class="container-fluid jumbotron" style="margin: 0px;">
+		<h1>Welcome to <b class="girl">Is</b>♥<b class="boy">Love</b> Community!</h1>
+		<p>
+			IsLove es una plataforma para conocer nuevas, y quién sabe, hasta tu media naranja! Está basado en un Proyecto Escolar Emprendedor con fines de Hobby y entreteniento. Actualmente estamos trabajando en el desarrollo de la Plataforma, pero sino quieres esperar más, Comparte esta Plataforma en tus redes sociales e Islove crezca con tu ayuda. ¡Diviérte!
+		</p>
+	</div>
+	<br><br>
+	<header class="col-md-12">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+						<span class="sr-only">Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand title"><strong><b class="girl-navbar">Is</b>♥<b class="boy-navbar">Love</b></strong></a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" id="user"><%=user%></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="row">
+		<div class="container-fluid col-xs-12 col-md-9">
+			<div class="chat">
+				<div class="chat_post">
+					<ul class="msg">    <!-- Acá añadiré todo el código que trabajaré después -->
+						<!-- Acá se añadirán los mensajes -->
+					</ul>
+				</div>
+			</div>
+			<div class="text">
+				<form action="" class="form">
+					<input type="text" id="message" class="form-control" placeholder="Escribe y presiona ENTER..." required autocomplete="off" autofocus="on">
+				</form>			
+			</div>
+		</div>
+
+		<aside class="hidden-xs hidden-sm col-md-3">
+			<div class="online">
+				<h1 style="margin: 0px; text-align: center; padding-top: 10px;" class="page-header" id="online ">Online<small class="numero"></small></h1>
+				<div class="online-scroll">
+					<ul id="conectados"></ul>
+				</div>
+			</div>
+		</aside>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><strong><h1>Acá pondré un Anuncio de Adsense</h1></strong></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-md-12 footer">
+				<ul class="lista_copyright">
+
+					<li class="li_copyright">
+						<h5 class="copyright">IsLove © 2017</h5>
+					</li>
+
+					<li class="li_copyright">
+						<h6 class="copyright">Todos los derechos reservados.</h6>
+					</li>
+					
+					<p class="author">created by <a href="https://github.com/Server1567" class="enlace">Server1567</a> and <a href="https://github.com/xManokerox" class="enlace">xManokerox</a></p>	
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+<!-- JavaScript -->
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src='/socket.io/socket.io.js'></script>
+<script src="/files/js/socket.js"></script>
+</body>
+</html>

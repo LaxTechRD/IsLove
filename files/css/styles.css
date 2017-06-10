@@ -1,0 +1,115 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgray;
+	min-height: 100vh;
+}
+
+.jumbotron {
+	padding: 50px;
+	margin-bottom: 0px;
+}
+
+.girl {
+	font-size: 50px;
+	font-family: cursive;
+	color: darkblue;
+}
+
+.boy {
+	font-size: 50px;
+	font-family: cursive;
+	color: darkred;
+}
+
+.title {
+	text-align: center;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+
+.button {
+	font-family: Verdana, sans-serif;
+}
+
+.form-input {
+	text-align: center;
+	height: 35px;
+	border-style: none;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+footer {
+	align-self: flex-end;
+	bottom: 0;
+	color: white;
+	padding-bottom: 10px;
+	background-color: #303030;
+}
+
+.login {
+	text-align: center;
+}
+
+.copyright {
+	margin-top: 17px;
+}
+
+.lista_copyright {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	list-style: none;
+}
+
+.li {
+	padding-right: 30px;
+	display: inline-block;
+}
+
+.author {
+	color: gray;
+	margin-top: 17px;
+	margin-right: 1em;
+	float: right;
+	font-style: italic;
+}
+
+/* Estilos del Registro */
+
+.form-input-reg {
+	height: 35px;
+	border-style: none;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+}
+
+.button_register {
+	width: 100px;
+	font-family: Verdana, sans-serif;
+}
+
+.web_design {
+	width: 100%;
+}
+
+.platform {
+	text-align: center;
+	color: gray;
+	font-family: cursive;
+}
+
+.enlace:hover {
+	text-decoration: none;
+}
